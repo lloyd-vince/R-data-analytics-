@@ -116,13 +116,3 @@ ggplot(mtcars, aes(
 
 ggplot() +
   geom_point(mpg, aes(x = displ, y = hwy))
-
-install.packages("mlbench")
-library(mlbench)
-data("Abalone")
-ggplot(Abalone) +
-  geom_histogram(aes(length)) +
-  facet_wrap(~ Type)
-
-ggplot(data = mpg) + 
-  geom_point(mapping = aes(x = displ, y = hwy), color = "green")
