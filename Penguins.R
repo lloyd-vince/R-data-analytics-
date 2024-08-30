@@ -106,13 +106,4 @@ ggplot(penguins, aes(x = bill_length_mm, y = bill_depth_mm, color = species)) +
   geom_point() +
   theme_minimal()
 
-ggplot(mtcars, aes(
-  x = hp,
-  y = mpg
-)) +
-  geom_point() +
- geom_smooth() +
-  facet_wrap(~cyl)
 
-ggplot() +
-  geom_point(mpg, aes(x = displ, y = hwy))
